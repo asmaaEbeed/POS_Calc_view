@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" style="height: auto;">
+    <head>
+        <title>ReadMore</title>
+        <meta charset="UTF-8">
+        <!--meta for internet explorer-->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <!--meta for mobile devices-->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- CSRF Token -->
+        <meta name="csrf-token" content="hDzxgWcWupgXItWpV4wQNGwsLSbWO7fF2Si0dPw1">
+
+        <title>POS - HUB_POS</title>
+        <!--[if lt IE 9]>
+        <script src="js/html5shiv.min.js"></script>
+        <script src="js/respond.min.js"></script> 
+        <![endif]-->
+        <!--Respond to treatment media query problem in IE-->
+        <link rel="stylesheet" href="css/vendor.css">
+        <!--fontawsome-->
+        <link href="fontawesome/css/all.css" rel="stylesheet"> <!--load all styles -->
+        <link rel="icon" href="images/favico.png"/>
+        
+        <!-- <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css"> -->
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body class="lockscreen" style="height: auto;">
+        <div class="wrapper" style="height: auto;">
+            <div class="main-container">
+                <div class="left-icons border-cyan no-padding" ">
+                    <div class="logo">Logo</div>
+                    <div class="left-control-icons">
+                        <a class="control-icons cyan-btn">
+                                <img src="images/icon-full-screen.png" class="control-img" alt="icon-full-screen">
+                                <p>Full Screen <br> [ F 11 ]</p>
+                        </a>
+                        <a class="control-icons pink-btn">
+                            
+                                <img src="images/icon-signout.png" class="control-img" alt="close register">
+                                <p>Close Register</p>
+                            
+                        </a>
+                        <a class="control-icons green-btn">
+                            <img src="images/icon-calculator.png" class="control-img" alt="calculator">
+                            <p>Calculator</p>
+                        </a>
+                        <a class="control-icons yellow-btn">
+                            <img src="images/icon-suspend.png" class="control-img" alt="suspended">
+                            <p>View Suspended</p>
+                        </a>
+                        <a class="control-icons blue-btn">
+                            <img src="images/icon-recent.png" class="control-img" alt="recent">
+                            <p>Recent Transactions</p>
+                        </a>
+                        <a class="control-icons purple-btn">
+                            <img src="images/icon-register-details.png" class="control-img" alt="register details">
+                            <p>Register Details</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="right-data-area" style="width: 100%;">
+                    <div class="row no-margin">
+                        <div class="top-header border-cyan" style="height: 65px; background-color: #ddd; border-left-width: 0;">
+                            <div class="row">
+                                <div class="col-xs-4"><b>Date: </b></div>
+                                <div class="col-xs-2">
+                                    <b>Location: </b> <span>Hub</span></div>
+                                <div class="col-xs-2"><b>Station: </b></div>
+                                <div class="col-xs-4"><b>User Login: </b></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="row no-margin border-cyan" style="border-width: 0 4px 4px 0;">
+                        <div class="col-md-5 no-padding" style="height: 200px; background-color: #fff; border-width: 0 2px 4px 0;">
+                            <div class="row no-margin">
+                                
+                                <div class="col-sm-12 no-padding">
+                                    <div class="form-group no-margin">
+                                        <div class="input-group">
+                                            <div class="input-group-btn">
+                                                <button type="button" class="btn btn-default bg-white btn-flat" data-toggle="modal" data-target="#configure_search_modal" title="Configure product search"><i class="fas fa-search-plus"></i></button>
+                                            </div>
+                                            <input class="form-control mousetrap ui-autocomplete-input" id="search_product" placeholder="Enter Product name / SKU / Scan bar code" autofocus="" name="search_product" type="text" autocomplete="off">
+                                            <span class="input-group-btn">
+                            
+                                                <!-- Show button for weighing scale modal -->
+                                                                    
+                            
+                                                <button type="button" class="btn btn-default bg-white btn-flat pos_add_quick_product" data-href="http://pos.edutechlabs.me/products/quick_add" data-container=".quick_add_product_modal"><i class="fa fa-plus-circle text-primary fa-lg"></i></button>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 no-padding">
+                                    <div class="form-group no-margin">
+                                        <div class="input-group">
+                                            <span class="input-group-addon">
+                                                <i class="fa fa-user"></i>
+                                            </span>
+                                            <input type="hidden" id="default_customer_id" value="3">
+                                            <input type="hidden" id="default_customer_name" value="Walk-In Customer">
+                                            <input type="hidden" id="default_customer_balance" value="0.0000">
+                                            <input type="hidden" id="default_customer_address" value="">
+                                            <span class="select2 select2-container select2-container--default" dir="ltr" style="width: 100%;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-customer_id-container"><span class="select2-selection__rendered small-txt" id="select2-customer_id-container" title="Walk-In Customer">Walk-In Customer</span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+                                            <span class="input-group-btn">
+                                                <button type="button" class="btn btn-default bg-white btn-flat add_new_customer" data-name=""><i class="fa fa-plus-circle text-primary fa-lg"></i></button>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 no-padding">
+                                    <span class="select2 select2-container select2-container--default select2-container--below select2-container--focus" dir="ltr" style="width: 100%;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-commission_agent-3z-container"><span class="select2-selection__rendered" id="select2-commission_agent-3z-container" title="Commission Agent">Commission Agent</span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-7 border-cyan no-padding" style="border-width: 0 0 0 2px;" >
+                            <div class="row no-margin" class="product-items-container" style="height: 220px; overflow: auto;"></div>
+                            <div class="row no-margin padding-5" >
+                                <div class="calc-parent">
+                                    <div class="calc-left-controls">
+                                        <a class="calc-left-controls__item pink-btn">
+                                            <i class="fa  fa-times-circle"></i>
+                                            <p>Cancel</p>
+                                        </a>
+                                        <a class="calc-left-controls__item yellow-btn">
+                                            <i class="fa fa-pause-circle"></i>
+                                            <p>Suspend</p>
+                                        </a>
+                                        <a class="calc-left-controls__item gray-btn">
+                                            <i class="fas fa-unlock"></i>
+                                            <p>New Bill</p>
+                                        </a>
+                                        <a class="calc-left-controls__item purple-btn">
+                                            <i class="fa fa-file-alt"></i>
+                                            <p>Quotation</p>
+                                        </a>
+                                    </div>
+                                    <div class="calc-numbers">
+                                        <div class="calc-number-column">
+                                            <div>
+                                                <div class="calc-number-row">
+                                                    <a class="calc-number">1</a>
+                                                    <a class="calc-number">4</a>
+                                                    <a class="calc-number">7</a>
+                                                    <a class="calc-number">.</a>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <div class="calc-number-row">
+                                                    <a class="calc-number">2</a>
+                                                    <a class="calc-number">5</a>
+                                                    <a class="calc-number">8</a>
+                                                    <a class="calc-number">0</a>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <div class="calc-number-row">
+                                                    <a class="calc-number">3</a>
+                                                    <a class="calc-number">6</a>
+                                                    <a class="calc-number">9</a>
+                                                    <a class="calc-number">1</a>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <div class="calc-number-row calc-num-control">
+                                                    <a class="calc-number green-btn">Qty</a>
+                                                    <a class="calc-number gray-txt">Rate</a>
+                                                    <a class="calc-number gray-txt">Clear</a>
+                                                    <a class="calc-number gray-txt">Enter</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="calc-save">
+                                            <div>
+                                                <a class="calc-left-controls__item cyan-btn">
+                                                    <i class="fa fa-pencil-alt"></i>
+                                                    <p>Draft</p>
+                                                </a>
+                                            </div>
+                                            <div>
+                                                <a class="calc-left-controls__item green-btn">
+                                                    <p>Save & Pay</p>
+                                                    <i class="fas fa-money-bill-alt"></i>
+                                                    <i class="fab fa-cc-mastercard"></i>
+                                                    
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <!-- <script src="js/jquery-2.2.3.min.js"></script> -->
+        <!-- <script src="js/popper.min.js"></script> -->
+        <!-- <script src="bootstrap/js/bootstrap.min.js"></script> -->
+        <!-- <script src="js/script.js"></script> -->
+    </body>
+</html>
