@@ -169,3 +169,41 @@
 .calc-save a{
     display: block;
 }
+@media(max-width: 610px){
+    .left-icons{
+        width: 25%;
+    }
+    .calc-left-controls p, .calc-save p{
+        font-size: 10px;
+        margin: 0;
+    }
+    .calc-left-controls__item i{
+        font-size: 20px;
+    }
+    .calc-number{
+        font-size: 13px;
+    }
+    .control-icons p{
+        letter-spacing: 0;
+        font-size: 12px;
+    }
+    .control-img{
+        width: 22px
+    }
+    .left-control-icons{
+        padding: 2px;
+    }
+    .calc-number-column{
+        column-gap: 3px
+    }
+    .calc-numbers{
+        margin: 0 0 0 3px ;
+    }
+    .calc-number-row{
+        row-gap: 3px;
+    }
+    .calc-left-controls__item{
+        padding: 0;
+    }
+    p{}
+}
