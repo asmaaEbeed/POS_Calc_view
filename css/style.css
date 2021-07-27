@@ -203,7 +203,6 @@
         row-gap: 3px;
     }
     .calc-left-controls__item{
-        padding: 0;
+        padding: 3px 0 0 0;
     }
-    p{}
 }
