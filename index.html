@@ -64,7 +64,7 @@
                 </div>
                 <div class="right-data-area" style="width: 100%;">
                     <div class="row no-margin">
-                        <div class="top-header border-cyan" style="height: 65px; background-color: #ddd; border-left-width: 0;">
+                        <div class="top-header border-cyan" style="height: 50px; background-color: #ddd; border-left-width: 0;">
                             <div class="row">
                                 <div class="col-xs-4"><b>Date: </b></div>
                                 <div class="col-xs-2">
@@ -75,8 +75,8 @@
                         </div>
                     </div>
                     
-                    <div class="row no-margin border-cyan" style="border-width: 0 4px 4px 0;">
-                        <div class="col-md-6 no-padding" style=" background-color: #fff; border-width: 0 2px 4px 0;">
+                    <div class="row no-float-row no-margin" style="border-width: 0 3px 3px 0;">
+                        <div class="col-md-6 no-float no-padding border-cyan  relative" style=" background-color: #fff; border-width: 0 2px 4px 0;">
                             <div class="row no-margin">
                                 
                                 <div class="col-sm-12 no-padding">
@@ -113,10 +113,130 @@
                                     <span class="select2 select2-container select2-container--default select2-container--below select2-container--focus" dir="ltr" style="width: 100%;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-commission_agent-3z-container"><span class="select2-selection__rendered" id="select2-commission_agent-3z-container" title="Commission Agent">Commission Agent</span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-md-6 border-cyan no-padding" style="border-width: 0 0 0 2px;" >
+                            <div class="row row-table bill">
+                                <table>
+                                    <tr>
+                                      <th>Product</th>
+                                      <th style="width: 20%;">Qty</th>
+                                      <th>Unit</th>
+                                      <th>Service staff</th>
+                                      <th>Subtotal</th>
+                                      <th>X</th>
+                                    </tr>
+                                    <tr>
+                                      <td>Rayan water bottle</td>
+                                      <td>
+                                          <div class="input-group">
+                                              <span class="input-group-btn">
+                                                  <button class="btn btn-default btn-flat quantity-down">
+                                                    <i class="fa fa-minus text-danger"></i>
+                                                  </button>
+                                              </span>
+                                              <input type="text" class="form-control pos_quantity input_number mousetrap input_quantity valid" value="1">
+                                              <span class="input-group-btn">
+                                                <button class="btn btn-default btn-flat quantity-down">
+                                                  <i class="fa fa-plus text-success"></i>
+                                                </button>
+                                            </span>
+                                          </div>
+                                      </td>
+                                      <td>
+                                          <select>
+                                              <option value="pcs">pcs.</option>
+                                              <option value="Bck">Bck.</option>
+                                          </select>
+                                      </td>
+                                      <td>
+                                          <select>
+                                              <option>Select serv</option>
+                                          </select>
+                                      </td>
+                                      <td>4.00</td>
+                                      <td><a class="delete-item">X</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Choco Milk 2</td>
+                                        <td>
+                                            <div class="input-group">
+                                                <span class="input-group-btn">
+                                                    <button class="btn btn-default btn-flat quantity-down">
+                                                      <i class="fa fa-minus text-danger"></i>
+                                                    </button>
+                                                </span>
+                                                <input type="text" class="form-control pos_quantity input_number mousetrap input_quantity valid" value="1">
+                                                <span class="input-group-btn">
+                                                  <button class="btn btn-default btn-flat quantity-down">
+                                                    <i class="fa fa-plus text-success"></i>
+                                                  </button>
+                                              </span>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <select>
+                                                <option value="pcs">pcs.</option>
+                                                <option value="Bck">Bck.</option>
+                                            </select>
+                                        </td>
+                                        <td>
+                                            <select>
+                                                <option>Select serv</option>
+                                            </select>
+                                        </td>
+                                        <td>3.00</td>
+                                        <td><a class="delete-item">X</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Bread pack</td>
+                                        <td>
+                                            <div class="input-group">
+                                                <span class="input-group-btn">
+                                                    <button class="btn btn-default btn-flat quantity-down">
+                                                      <i class="fa fa-minus text-danger"></i>
+                                                    </button>
+                                                </span>
+                                                <input type="text" class="form-control pos_quantity input_number mousetrap input_quantity valid" value="1">
+                                                <span class="input-group-btn">
+                                                  <button class="btn btn-default btn-flat quantity-down">
+                                                    <i class="fa fa-plus text-success"></i>
+                                                  </button>
+                                              </span>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <select>
+                                                <option value="pcs">pcs.</option>
+                                                <option value="Bck">Bck.</option>
+                                            </select>
+                                        </td>
+                                        <td>
+                                            <select>
+                                                <option>Select serv</option>
+                                            </select>
+                                        </td>
+                                        <td>2.00</td>
+                                        <td><a class="delete-item">X</a></td>
+                                    </tr>
+                                  </table>
+                            </div>
                             
-                            <div class="row no-margin padding-5" >
+                            <div class="left-footer">
+                                <div class="row total-bill no-margin" >
+                                    <div class="col-xs-6 margin-bottom">Items: 3.00</div>
+                                    <div class="col-xs-6 margin-bottom">Total: 9.00</div>
+                                    <div class="col-xs-6 margin-bottom">Discount: 0.00</div>
+                                    <div class="col-xs-6 margin-bottom">Total: 9.00</div>
+                                </div>
+                                <div class="copy-right">
+                                    <img src="images/line-scratsh.png" alt="copy-right">
+                                <div class="cyan-div">Smart POS - V4.2 | Copyright © 2021 All rights reserved.</div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-6 no-float border-cyan no-padding no-left-border no-top-border" >
+                            
+                            <div class="row no-margin padding-5 border-bottom" >
                                 <div class="calc-parent">
                                     <div class="calc-left-controls">
                                         <a class="calc-left-controls__item pink-btn">
@@ -172,7 +292,7 @@
                                             </div>
                                         </div>
                                         <div class="calc-save">
-                                            <div>
+                                            <div class="">
                                                 <a class="calc-left-controls__item cyan-btn">
                                                     <i class="fa fa-pencil-alt"></i>
                                                     <p>Draft</p>
@@ -191,7 +311,67 @@
                                 </div>
                                 
                             </div>
-                            <div class="row no-margin" class="product-items-container" style="height: 220px; overflow: auto;"></div>
+                            <div class="row no-margin padding-5" class="product-items-container" style="height: 276px; overflow: auto;">
+                            <div class="row no-margin">
+                                <select class="cat-select">
+                                    <option value="allCat">All Categories</option>
+                                </select>
+                                <select class="cat-select">
+                                    <option value="allBrand">All Brands</option>
+                                </select>
+                            </div>
+                            <div class="row margin-top">
+                                <div class=" col-xs-4 col-md-3 no-padding">
+                                    <a class="items-link">
+                                        <div class=" items ">
+                                            <img src="images/item1.png"/>
+                                            <p>prod (1)<br> (1001)</p>
+                                        </div>
+                                    </a>
+                                    
+                                </div>
+                                
+                                <div class="col-xs-4 col-md-3 no-padding">
+                                    <a class="items-link">
+                                        <div class=" items ">
+                                            <img src="images/item1.png"/>
+                                            <p>prod (1)<br> (1001)</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-xs-4 col-md-3 no-padding">
+                                    <a class="items-link">
+                                        <div class=" items ">
+                                            <img src="images/item1.png"/>
+                                            <p>prod (1)<br> (1001)</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-xs-4 col-md-3 no-padding">
+                                    <a class="items-link">
+                                        <div class=" items ">
+                                            <img src="images/item1.png"/>
+                                            <p>prod (1)<br> (1001)</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class=" col-xs-4 col-md-3 no-padding">
+                                    <a class="items-link">
+                                        <div class=" items ">
+                                            <img src="images/item1.png"/>
+                                            <p>prod (1)<br> (1001)</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-xs-4 col-md-3 no-padding">
+                                    <a class="items-link">
+                                        <div class=" items">
+                                            <i class="fa fa-plus-circle "></i>
+                                        </div>
+                                    </a>
+                                    
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

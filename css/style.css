@@ -4,8 +4,34 @@
 a{
     text-decoration: none;
 }
+.no-float-row{
+    height: 100%;
+    display: table-row;
+}
+.no-float-row .no-float{
+    display: table-cell;
+  float: none;
+}
+.no-left-border{
+    border-left: 0 !important;
+}
+.no-top-border{
+    border-top: 0 !important
+}
+.relative{
+    position: relative;
+}
+.inline-table{
+    display: inline-table;
+}
 .padding-5{
     padding: 5px;
+}
+.border-bottom{
+    border-bottom: 3px solid #0fa8ba;
+}
+.margin-top{
+    margin: 10px 0 0 0;
 }
 .wrapper{
     height: 100%;
@@ -25,7 +51,7 @@ a{
     
 }
 .left-icons{
-    width: 125px
+    width: 105px
 }
 .left-control-icons{
     padding: 5px;
@@ -43,7 +69,7 @@ a{
 }
 .control-icons{
     height: 70px;
-    width: 88%;
+    width: 95%;
     color: #fff;
     margin-bottom: 10px;
     text-align: center;
@@ -59,7 +85,7 @@ a{
 }
 .control-icons p{
     letter-spacing: 0.5px;
-    font-size: 13px;
+    font-size: 11px;
 }
 .control-icons:hover{
     color: #fff !important;
@@ -103,15 +129,16 @@ a{
     grid-template-columns: 20% 80%;
     height: 100%;
     text-align: center;
+    column-gap: 5px;
 }
 .calc-left-controls{
     display: grid;
     grid-template-rows: repeat(auto);
-    row-gap: 10px;
+    row-gap: 5px;
 }
 .calc-left-controls__item{
     color: #fff;
-    padding: 7px;
+    padding: 5px;
 }
 .calc-left-controls__item i{
     font-size: 28px;
@@ -128,16 +155,17 @@ a{
     letter-spacing: 1px;
     font-weight: 600;
     font-size: 15px;
+    margin: 0 0 8px;
 }
 .calc-numbers{
     display: grid;
-    margin: 0 0 0 10px
+    /* margin: 0 0 0 10px; */
+    row-gap: 5px;
 }
 .calc-numbers a.calc-number{
     color: #fff;
     cursor: pointer;
-    line-height: 20%;
-    line-height: 3;
+    line-height: 2;
 }
 .calc-numbers a:hover{
     color: #fff;
@@ -152,8 +180,7 @@ a{
 .calc-number{
     color: #14a6b9 !important;
     background-color: #bdd3e0;
-    font-size: 20px;
-    font-weight: 800;
+    font-size: 27px;
 }
 
 
@@ -171,17 +198,106 @@ a{
 }
 .calc-save{
     display: grid;
-    grid-template-columns: 30% 70%;
-}
-.calc-save{
-    margin-top: 10px;
+    grid-template-columns: 30% 69%;
+    column-gap: 1%;
 }
 .calc-save a{
     display: block;
 }
 .logo-responsive{
-    max-width: 80%;
+    max-width: 65%;
 }
+.cat-select{
+    padding: 7px;
+    width: 35%;
+    border: 0;
+    margin-right: 20px;
+}
+.items{
+    background-color: #fff;
+    min-height: 80px;
+    text-align: center;
+    margin-right: 8px;
+    padding: 5px 2px;
+    margin-bottom: 7px;
+}
+.items img{
+    width: 50%
+}
+.items p {
+    margin: 0 0 5px;
+}
+.items i {
+    line-height: 3.6;
+    font-size: 26px;
+    color: #828282;
+}
+.items-link{
+    cursor: pointer;
+}
+.items-link p{
+    font-size: 12px;
+    margin-top: 5px;
+    color: #828282;
+}
+.left-footer{
+    position: absolute;
+    bottom: 0;
+    /* width: 41%; */
+    text-align: center;
+}
+.copy-right img{
+    display: block;
+    width: 100%;
+}
+.left-footer .copy-right .cyan-div{
+    background-color: #0fa8ba;
+}
+.bill table{
+    width: 100%;
+}
+.row-table{
+    margin: 10px 3px !important;
+}
+.row-table table th, .row-table table td {
+    text-align: left;
+    padding: 4px 2px;
+    font-size: 13px;
+    text-align: center;
+  }
+  .row-table table th:first-child, .row-table table td:first-child {
+    text-align: left;
+  }
+  .row-table tr:first-child{
+      border-bottom: 1px solid #828282;
+  }
+  .row-table tr{
+      border-bottom: 1px dashed #828282;
+  }
+  .row-table select{
+    padding: 3px 5px;
+    border: 1px solid #ddd;
+  }
+  .delete-item{
+      font-weight: 800;
+      color: #f00;
+      cursor: pointer;
+  }
+  .delete-item:hover{
+      color: #f00
+  }
+  .row-table .form-control{
+    padding: 3px 5px;
+    text-align: center;
+    height: auto;
+  }
+  .row-table .btn{
+    padding: 3px 5px;
+  }
+  .total-bill{
+      /* margin-top: 10% !important; */
+      border-top: 1px solid #ddd;
+  }
 @media(max-width: 610px){
     .left-icons{
         width: 25%;
@@ -198,7 +314,7 @@ a{
     }
     .control-icons p{
         letter-spacing: 0;
-        font-size: 12px;
+        font-size: 10px;
     }
     .control-img{
         width: 22px;
