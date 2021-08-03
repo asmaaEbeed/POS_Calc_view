@@ -4,13 +4,25 @@
 a{
     text-decoration: none;
 }
-.no-float-row{
+/* .no-float-row{
     height: 100%;
     display: table-row;
 }
 .no-float-row .no-float{
     display: table-cell;
-  float: none;
+    float: none;
+} */
+.flex{
+    display: flex
+}
+@media(max-width: 991px){
+    /* .flex .no-float{
+        flex: 1 auto;
+        display: flex;
+    } */
+    .flex.block{
+        display: block
+    }
 }
 .no-left-border{
     border-left: 0 !important;
@@ -246,6 +258,11 @@ a{
     /* width: 41%; */
     text-align: center;
 }
+@media(max-width: 991px){
+    .left-footer{
+        position: relative;;
+    }
+}
 .copy-right img{
     display: block;
     width: 100%;
@@ -310,7 +327,7 @@ a{
         font-size: 20px;
     }
     .calc-number{
-        font-size: 13px;
+        font-size: 16px;
     }
     .control-icons p{
         letter-spacing: 0;
