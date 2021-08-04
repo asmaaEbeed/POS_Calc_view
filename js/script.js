@@ -1,17 +1,3 @@
-// alert(screen.height);
-// alert($(".main-container").height());
-// // $(window).resize(function () {
-// //     $(".main-container").css('height', "100%");
-// //     $(".left-icons ").css('height', "100%");
-// // });
-// if($(".main-container").height() < screen.height){
-//     alert("true")
-//     // $(".main-container").height() = screen.height;
-//     $(".main-container").css('height', screen.height);
-//     alert("screenHeight" + screen.height);
-//     alert("ll" + $(".main-container").height());
-// } 
-// alert("screenHeight" + screen.height);
 $(window).resize(function () { 
     if(screen.width < 992) {
         $(".main-container").css('height', "100%");
