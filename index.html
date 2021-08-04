@@ -65,17 +65,34 @@
                 <div class="right-data-area" style="width: 100%;">
                     <div class="row no-margin">
                         <div class="top-header border-cyan" style="height: 50px; background-color: #ddd; border-left-width: 0;">
-                            <div class="row">
-                                <div class="col-xs-4"><b>Date: </b></div>
-                                <div class="col-xs-2">
-                                    <b>Location: </b> <span>Hub</span></div>
-                                <div class="col-xs-2"><b>Station: </b></div>
-                                <div class="col-xs-4"><b>User Login: </b></div>
+                            <div class="row no-margin">
+                                <div class="col-xs-3">
+                                    <div id="date"></div>
+                                    <div id="clock"></div>
+                                </div>
+                                <div class="col-xs-3 location">
+                                    <p>
+                                        <b>Location: </b> <span>The-Hub Doha</span>
+                                    </p>
+                                </div>
+                                <div class="col-xs-2 station">
+                                    <p>
+                                        <b>Station: </b><span>0001</span>
+                                    </p>
+                                </div>
+                                <div class="col-xs-4 text-right user-login">
+                                    <div class="float-right">
+                                        <img alt="userImage" class="user-img" src="images/avatar.png">
+                                    </div>
+                                    <div class="float-right user-name">
+                                        <b>Hakem<br>T. Metawea</b>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                     
-                    <div class="row no-float-row no-margin flex block" style="border-width: 0 3px 3px 0;">
+                    <div class="row main-row-container no-margin flex block" style="border-width: 0 3px 3px 0;">
                         <div class="col-md-6 no-float no-padding border-cyan  relative" style=" background-color: #fff; border-width: 0 2px 4px 0;">
                             <div class="row no-margin">
                                 
@@ -114,7 +131,7 @@
                                 </div>
                             </div>
                             <div class="row row-table bill">
-                                <table>
+                                <!-- <table>
                                     <tr>
                                       <th>Product</th>
                                       <th style="width: 20%;">Qty</th>
@@ -216,15 +233,78 @@
                                         <td>2.00</td>
                                         <td><a class="delete-item">X</a></td>
                                     </tr>
-                                  </table>
+                                  </table> -->
+                            
+                                <table>
+                                <tr>
+                                    <th>Product</th>
+                                    <th>Qty</th>
+                                    <th>Unit</th>
+                                    <th>Price</th>
+                                    <th>Disc.(%)</th>
+                                    <th>Subtotal</th>
+                                    <th>X</th>
+                                </tr>
+                                <tr>
+                                    <td>Rayan water bottle</td>
+                                    <td>
+                                        <div class="input-group">
+                                            2
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div>pcs.</div>
+                                    </td>
+                                    <td>
+                                        2.00
+                                    </td>
+                                    <td>0</td>
+                                    <td>Subtotal</td>
+                                    <td><a class="delete-item">X</a></td>
+                                </tr>
+                                <tr>
+                                    <td>Choco Milk 2</td>
+                                    <td>
+                                        <div class="input-group">
+                                            2
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div>pcs.</div>
+                                    </td>
+                                    <td>
+                                        2.00
+                                    </td>
+                                    <td>0</td>
+                                    <td>Subtotal</td>
+                                    <td><a class="delete-item">X</a></td>
+                                </tr>
+                                <tr>
+                                    <td>Bread pack</td>
+                                    <td>
+                                        <div class="input-group">
+                                            2
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div>pcs.</div>
+                                    </td>
+                                    <td>
+                                        2.00
+                                    </td>
+                                    <td>0</td>
+                                    <td>Subtotal</td>
+                                    <td><a class="delete-item">X</a></td>
+                                </tr>
+                                </table>
                             </div>
                             
                             <div class="left-footer">
                                 <div class="row total-bill no-margin" >
-                                    <div class="col-xs-6 margin-bottom">Items: 3.00</div>
-                                    <div class="col-xs-6 margin-bottom">Total: 9.00</div>
-                                    <div class="col-xs-6 margin-bottom">Discount: 0.00</div>
-                                    <div class="col-xs-6 margin-bottom">Total: 9.00</div>
+                                    <div class="col-xs-6 margin-bottom text-left">Items: 3.00</div>
+                                    <div class="col-xs-6 margin-bottom text-right">Total: 9.00</div>
+                                    <div class="col-xs-6 margin-bottom text-left">Discount: 0.00</div>
+                                    <div class="col-xs-6 margin-bottom text-right">Packing Charging: 0.00</div>
                                 </div>
                                 <div class="copy-right">
                                     <img src="images/line-scratsh.png" alt="copy-right">
@@ -260,26 +340,26 @@
                                         <div class="calc-number-column">
                                             <div>
                                                 <div class="calc-number-row">
-                                                    <a class="calc-number">1</a>
-                                                    <a class="calc-number">4</a>
-                                                    <a class="calc-number">7</a>
-                                                    <a class="calc-number">.</a>
+                                                    <a class="calc-number num">1</a>
+                                                    <a class="calc-number num">4</a>
+                                                    <a class="calc-number num">7</a>
+                                                    <a class="calc-number num">.</a>
                                                 </div>
                                             </div>
                                             <div>
                                                 <div class="calc-number-row">
-                                                    <a class="calc-number">2</a>
-                                                    <a class="calc-number">5</a>
-                                                    <a class="calc-number">8</a>
-                                                    <a class="calc-number">0</a>
+                                                    <a class="calc-number num">2</a>
+                                                    <a class="calc-number num">5</a>
+                                                    <a class="calc-number num">8</a>
+                                                    <a class="calc-number num">0</a>
                                                 </div>
                                             </div>
                                             <div>
                                                 <div class="calc-number-row">
-                                                    <a class="calc-number">3</a>
-                                                    <a class="calc-number">6</a>
-                                                    <a class="calc-number">9</a>
-                                                    <a class="calc-number">1</a>
+                                                    <a class="calc-number num">3</a>
+                                                    <a class="calc-number num">6</a>
+                                                    <a class="calc-number num">9</a>
+                                                    <a class="calc-number num">1</a>
                                                 </div>
                                             </div>
                                             <div>
@@ -378,7 +458,8 @@
             </div>
             
         </div>
-        <!-- <script src="js/jquery-2.2.3.min.js"></script> -->
+        <script src="js/jquery-2.2.3.min.js"></script>
+        <script src="js/script.js"></script>
         <!-- <script src="js/popper.min.js"></script> -->
         <!-- <script src="bootstrap/js/bootstrap.min.js"></script> -->
         <!-- <script src="js/script.js"></script> -->

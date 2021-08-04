@@ -1,6 +1,33 @@
 *{
     box-sizing: border-box;
+    font-family: 'Open Sans';
 }
+/* @font-face kit by Fonts2u (https://fonts2u.com) */ 
+@font-face {
+    font-family:"Open Sans Semibold";
+    src:url("Font/OpenSans-Semibold.eot?") format("eot"),
+    url("Font/OpenSans-Semibold.woff") format("woff"),
+    url("Font/OpenSans-Semibold.ttf") format("truetype"),
+    url("Font/OpenSans-Semibold.svg#OpenSans-Semibold") format("svg");font-weight:normal;font-style:normal;
+}
+@font-face {
+    font-family:"Open Sans Extrabold";
+    src:url("Font/OpenSans-ExtraBold.eot?") format("eot"),
+    url("Font/OpenSans-ExtraBold.woff") format("woff"),
+    url("Font/OpenSans-ExtraBold.ttf") format("truetype"),
+    url("Font/OpenSans-ExtraBold.svg#OpenSans-Extrabold") format("svg");font-weight:normal;font-style:normal;
+}
+@font-face {
+    font-family:"Open Sans";
+    src:url("Font/OpenSans-Regular.eot?") format("eot"),
+    url("Font/OpenSans-Regular.woff") format("woff"),
+    url("Font/OpenSans-Regular.ttf") format("truetype"),
+    url("Font/OpenSans-Regular.svg#OpenSans") format("svg");
+    font-weight:normal;
+    font-style:normal;
+}
+
+
 a{
     text-decoration: none;
 }
@@ -36,6 +63,12 @@ a{
 .inline-table{
     display: inline-table;
 }
+.inline-block{
+    display: inline-block
+}
+.float-right{
+    float: right;
+}
 .padding-5{
     padding: 5px;
 }
@@ -51,6 +84,9 @@ a{
     overflow-x: hidden;
     overflow-y: auto;
 }
+.main-row-container{
+    height: calc(100% - 50px);
+}
 .lockscreen{
     background: #fff;
 }
@@ -59,7 +95,9 @@ a{
     display: flex;
     max-width: 1024px;
     justify-content: center;
-    margin: 0 auto
+    margin: 0 auto;
+    height: 100vh;
+    overflow: auto;
     
 }
 .left-icons{
@@ -125,7 +163,28 @@ a{
     background-color: #828282;
 }
 .top-header{
-    padding: 5px;
+    padding: 3px;
+}
+#clock{
+    font-size: 17px;
+    font-weight: 700;
+    color: #000;
+}
+#date, .user-login{
+    line-height: 1;
+}
+.user-login b{
+    line-height: 1.4;
+}
+.user-name{
+    padding-right: 5px;
+}
+.user-img{
+    border: 1px solid #000;
+    max-height: 42px;
+}
+.location, .station{
+    padding-top: 0.5%;
 }
 .select2-container--default .select2-selection--single, .select2-selection .select2-selection--single{
     padding: 6px 6px;
@@ -169,10 +228,17 @@ a{
     font-size: 15px;
     margin: 0 0 8px;
 }
+.calc-num-control .calc-number{
+    /* font-family: "Open Sans Semibold"; */
+    font-weight: 900;
+}
 .calc-numbers{
     display: grid;
     /* margin: 0 0 0 10px; */
     row-gap: 5px;
+}
+.num{
+    font-family: "Open Sans Extrabold";
 }
 .calc-numbers a.calc-number{
     color: #fff;
@@ -280,7 +346,6 @@ a{
     text-align: left;
     padding: 4px 2px;
     font-size: 13px;
-    text-align: center;
   }
   .row-table table th:first-child, .row-table table td:first-child {
     text-align: left;
